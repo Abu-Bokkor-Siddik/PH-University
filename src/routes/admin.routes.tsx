@@ -11,6 +11,12 @@ import CreateAcademicFaculty from "../pages/admin/academicManagement/CreateAcade
 import AcademicFaculty from "../pages/admin/academicManagement/AcademicFaculty";
 import CreateAcademicDepartment from "../pages/admin/academicManagement/CreateAcademicDepartment";
 import AcademicDepartment from "../pages/admin/academicManagement/AcademicDepartment";
+import SemesterRegistration from "../pages/admin/courseManagement/SemesterRegistration";
+import RegisteredSemesters from "../pages/admin/courseManagement/RegisteredSemesters";
+import CreateCourse from "../pages/admin/courseManagement/CreateCourse";
+import Courses from "../pages/admin/courseManagement/Courses";
+import OfferCourse from "../pages/admin/courseManagement/OfferCourse";
+import OfferedCourses from "../pages/admin/courseManagement/OfferedCourses";
 
 type TSideBer = {
   key: string;
@@ -80,6 +86,45 @@ export const adminPaths = [
         
       ],
     },
+
+    // start
+    {
+      name: 'Course Management',
+      children: [
+        {
+          name: 'Semester Registration',
+          path: 'semester-registration',
+          element: <SemesterRegistration />,
+        },
+        {
+          name: 'Registered Semesters',
+          path: 'registered-semesters',
+          element: <RegisteredSemesters />,
+        },
+        {
+          name: 'Create Course',
+          path: 'create-course',
+          element: <CreateCourse />,
+        },
+        {
+          name: 'Courses',
+          path: 'courses',
+          element: <Courses />,
+        },
+        {
+          name: 'Offer Course',
+          path: 'offer-course',
+          element: <OfferCourse />,
+        },
+        {
+          name: 'Offered Courses',
+          path: 'offered-courses',
+          element: <OfferedCourses />,
+        },
+      ],
+    },
+    // end
+
     
   ];
 //  programatical way

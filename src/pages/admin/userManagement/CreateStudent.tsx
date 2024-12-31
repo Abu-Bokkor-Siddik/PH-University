@@ -9,6 +9,7 @@ const CreateStudent = () => {
  console.log(data)
  const formData= new FormData()
  formData.append('data',JSON.stringify(data))
+ 
   }
   return (
     <PHForm onSubmit={onSubmit}>
